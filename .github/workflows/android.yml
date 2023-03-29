@@ -28,6 +28,8 @@ jobs:
       working-directory: android/vision-quickstart/
       run: ./gradlew build
     
+    - run:  ls -lsR
+    
     - uses: actions/upload-artifact@v3
       with:
           name: ml-kit-vision-debug-apk
