@@ -27,3 +27,8 @@ jobs:
     - name: Build with Gradle
       working-directory: android/vision-quickstart/
       run: ./gradlew build
+    
+    - uses: actions/upload-artifact@v3
+      with:
+          name: ml-kit-vision-debug-apk
+          path: android/vision-quickstart/app/build/outputs/apk/debug/app-debug.apk
