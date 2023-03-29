@@ -21,9 +21,9 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      working-directory: mlkit/android/vision-quickstart/
+      working-directory: android/vision-quickstart/
       run: chmod +x gradlew
       
     - name: Build with Gradle
-      working-directory: mlkit/android/vision-quickstart/
+      working-directory: android/vision-quickstart/
       run: ./gradlew build
