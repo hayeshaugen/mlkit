@@ -26,9 +26,9 @@ jobs:
       
     - name: Build with Gradle
       working-directory: android/vision-quickstart/
-      run: ./gradlew build
+      run: ./gradlew assembleDebug
     
-    - run:  ls -lsR
+    - run:  ls -lsR android/vision-quickstart/app/build
     
     - uses: actions/upload-artifact@v3
       with:
